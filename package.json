@@ -15,6 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
+    "commit": "git-cz",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
@@ -60,18 +61,24 @@
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.3",
     "babel-loader": "^8.2.2",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "semantic-release": "^17.4.2",
     "size-limit": "^4.10.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
-    "typescript": "^4.2.4",
-    "semantic-release": "^17.4.2"
+    "typescript": "^4.2.4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bmvantunes/youtube-2021-may-automatic-publish-npm-semantic-release-and-github-actions.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
